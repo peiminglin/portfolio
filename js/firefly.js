@@ -1,10 +1,13 @@
 
-class Bird {
+class Firefly {
     constructor(id){
         this.me = document.getElementById(id);
         this.x = 10;
         this.y = 10;
         this.duration = 0;
+        this.size = 0.7 + Math.random()*0.8;
+        this.me.style.width = (this.size * 40)+'px';
+        this.me.style.height = this.me.style.width;
     }
 
     clamp(n, min, max){
@@ -13,16 +16,10 @@ class Bird {
         return n;
     }
 
-    run(){
+    move(){
         this.duration = 1000 + Math.floor(Math.random()*5000);
-        const dx = (Math.random()-this.x/100)*80;
-        const dy = (Math.random()-this.y/100)*80;
-        if (dx < 0){
-            this.me.style.transform = "scaleX(-1)";
-        }else{
-            this.me.style.transform = "scaleX(1)";
-        }
-
+        const dx = (Math.random()-this.x/100)*60;
+        const dy = (Math.random()-this.y/100)*60;
         this.x += dx;
         this.y += dy;
 
@@ -34,31 +31,31 @@ class Bird {
         this.me.style.transitionDuration = this.duration + 'ms';
 
         window.setTimeout( ()=>{
-            this.run();
-        }, this.duration);
+            this.move();
+        }, this.duration);  
+    }
+
+    run(){
+        this.move();
     }
 }
 
 const theSky = document.querySelector('.sky');
-const birdDiv = document.createDocumentFragment();
-const birdsAmount = 3;
+const flyDiv = document.createDocumentFragment();
+const flyAmount = 3;
 
-for (let i = 0; i < birdsAmount; i ++){
+for (let i = 0; i < flyAmount; i ++){
     const div = document.createElement('div');
-    div.classList.add('bird');
-    div.id = 'bird'+i;
-    div.innerHTML = "<svg viewBox='0 0 210 297' xmlns:xlink='http://www.w3.org/1999/xlink'><use xlink:href='#birdSvg'/> </svg>";
-    birdDiv.appendChild(div);
+    div.classList.add('firefly');
+    div.id = 'firefly'+i;
+    flyDiv.appendChild(div);
 }
 
-theSky.appendChild(birdDiv);
+theSky.appendChild(flyDiv);
 
-for (let i = 0; i < birdsAmount; i ++){
-    const birdy = new Bird('bird'+i);
-    console.log(document.getElementsByTagName('path').length);
-    
-    //birdy.me.getElementsByTagName('path')[0].style.fill = '#ccc';
-    birdy.run();
+for (let i = 0; i < flyAmount; i ++){
+    const fly = new Firefly('firefly'+i);
+    fly.run();
 }
 
 // const flyingAnimation = anime.timeline({
