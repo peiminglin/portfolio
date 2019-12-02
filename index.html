@@ -1,33 +1,40 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="code/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/anime.min.js"></script>
     </head>
     <body>
+        <div class="sky">
+            <svg width="21" height="30" viewBox="0 0 210 297">
+                <symbol id="birdSvg" >
+                    <path style="fill:#ca5017;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                        d="M 171.50871,147.24907 146.99824,143.32002 102.81711,42.135688 94.346146,94.676966 47.302187,46.697901 77.240886,133.69831 58.750784,131.19008 v 29.19817 z"
+                        />
+                </symbol>
+            </svg>
+        </div>
         <div class="contentBox">
             <section class="container">
-                <div class="logo">
-                    <img src="imgs/me.png" alt="Logo Me" onclick="slideDown()"/>
+                <div class="info folded">
+                    <div class="myphoto">
+                        <img src="imgs/me_.png" alt="my photo"/>
+                    </div>
+                    <div class="infoText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam omnis perferendis officia ut quis, impedit, sit pariatur dolores corrupti quas accusantium mollitia! Excepturi animi placeat voluptatem incidunt ipsam soluta?Culpa, unde repellat obcaecati doloremque eligendi ducimus rem delectus labore nisi voluptatibus tenetur tempore sequi autem odit recusandae? Quasi dolorem delectus quae excepturi vel voluptates aliquam rem error, praesentium quis?</div>
                 </div>
                 <div class="aboutText">
-                    <p>Hi, my name is Alex. I like </p>
-                </div>
-                <div class="info">
-                    <h1 class="mask catText vertical">INFO</h1>
-                </div>
-                <div class="contact">
-                    <h1 class="mask catText">CONTACT</h1>
-                </div>
-                <div class="resume">
-                    <h1 class="mask catText vertical">RESUME</h1>
-                </div>
-                <div class="works">
-                        <h1 class="mask catText">WORKS</h1>
+                    <p>Hi there, I'm <a class="keyword3 link" onclick="showContent('.info')">Alex</a>. I like to Design and Code.</p>
+                    <p>I make <a class="keyword1 link" onclick="slideDown()">Games</a>, sometimes <a class="keyword2">Websites</a> too.</p> 
+                    <p><a class="keyword4 link" href="mailto:wooring@gmail.com">Contact<i class="material-icons">email</i></a> Me!</p>
                 </div>
             </section>
         </div>
         <div class="carousel-container">
             <div class="carousel">
-                <div class="goUp" onclick="slideUp()">BackUp</div>
+                <div class="goUp" onclick="slideUp()">
+                        <i class="material-icons">
+                                expand_less
+                        </i>
+                </div>
                 <div class="slider">
                     <section>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/OkQd3mL5aiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -66,5 +73,6 @@
             </div>
         </div>
         <script src="js/carousel.js"></script>
+        <script src="js/bird.js"></script>
   </body>
 </html>

@@ -67,3 +67,13 @@ function fadeIn(){
     aboutContainer.style.filter = 'blur(0px)';
     aboutContainer.style.transform = 'scale(1)';
 }
+
+//
+function showContent(_class){
+    const content = document.querySelector(_class);
+    if (content.classList.contains('folded')){
+        content.classList.remove('folded');
+    }else{
+        content.classList.add('folded');
+    }
+}
