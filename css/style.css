@@ -43,22 +43,22 @@ body::after{
 }
 
 .keyword1 {
-    color: #d36;
+    color: #c98474;
     font-size: 3em;
 }
 
 .keyword2 {
-    color: #d63;
+    color: #f2d34b;
     font-size: 2.7em;
 }
 
 .keyword3 {
-    color: #36d;
+    color: #a7d2cb;
     font-size: 2.3em;
 }
 
 .keyword4 {
-    color: #63d;
+    color: #874c62;
     font-size: 2em;
 }
 
