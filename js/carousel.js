@@ -1,8 +1,6 @@
 const slider = document.querySelector('.slider');
 const sections = Array.from(slider.children).length;
 slider.style.width = (sections)+'00%';
-//const dotsNode = document.querySelector('.controls ul');
-//const dots = Array.from(dotsNode.children);
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
 
@@ -44,36 +42,3 @@ document.querySelectorAll('.controls li').forEach(function(dot, id){
     });
 });
 
-//==================================
-const worksContainer = document.querySelector('.carousel-container');
-const aboutContainer = document.querySelector('.container');
-function slideDown(){
-    worksContainer.style.top = '50%';
-    fadeOut();
-}
-
-function slideUp(){
-    worksContainer.style.top = '-50%';
-    fadeIn();
-}
-
-//===================================
-function fadeOut(){
-    aboutContainer.style.filter = 'blur(15px)';
-    aboutContainer.style.transform = 'scale(0.9)';
-}
-
-function fadeIn(){
-    aboutContainer.style.filter = 'blur(0px)';
-    aboutContainer.style.transform = 'scale(1)';
-}
-
-//
-function showContent(_class){
-    const content = document.querySelector(_class);
-    if (content.classList.contains('folded')){
-        content.classList.remove('folded');
-    }else{
-        content.classList.add('folded');
-    }
-}

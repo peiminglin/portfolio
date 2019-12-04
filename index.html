@@ -5,17 +5,41 @@
     </head>
     <body>
         <div class="sky"></div>
+        <div class="sideInfo">
+            <div class="sideText">
+                <div class="myphoto">
+                    <img src="imgs/me_circle.png" alt="my photo"/>
+                </div>
+                <h1>About Me</h1>
+                <p>My name is Peiming Lin, but you can call me Alex. I'm currently living in Sydney and I love to code and design.</p>
+                <p>I'm finishing my Games Development Degree by the end of 2019 and should be graduated soon. </p>
+            </div>
+            <div class="sideMask" onclick="pullInfo()">
+                <div class="close">
+                    <i class="material-icons large">
+                            keyboard_arrow_left
+                    </i>
+                </div>
+            </div>
+        </div>
         <div class="contentBox">
             <section class="container">
-                <div class="info folded">
+                <div class="info">
                     <div class="myphoto">
-                        <img src="imgs/me_.png" alt="my photo"/>
+                        <img src="imgs/me_circle.png" alt="my photo"/>
                     </div>
-                    <div class="infoText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam omnis perferendis officia ut quis, impedit, sit pariatur dolores corrupti quas accusantium mollitia! Excepturi animi placeat voluptatem incidunt ipsam soluta?Culpa, unde repellat obcaecati doloremque eligendi ducimus rem delectus labore nisi voluptatibus tenetur tempore sequi autem odit recusandae? Quasi dolorem delectus quae excepturi vel voluptates aliquam rem error, praesentium quis?</div>
+                    <div class="infoText">
+                        <h1>About Me</h1>
+                        <p>My name is Peiming Lin, but you can call me Alex. I'm living in Sydney and love to code and design.</p>
+                        <p>I'm finishing my Games Development Degree by the end of 2019</p>
+                        <p>I had a Computer Science degree and I used to work in a game company for 3 years in China. I had a chance to come to Australia to experience a different life and I thought I was young so I resigned.</p>
+                        <p>After arrival in Australia, I started to work in different industry for some years and realised making game is still my dream. So I went to UTS to study Games Development Degree and about to finish it by the end of 2019.</p>
+                    </div>
                 </div>
                 <div class="aboutText">
-                    <p>Hi there, I'm <a class="keyword3 link" onclick="showContent('.info')">Alex</a>. I like to Design and Code.</p>
-                    <p>I make <a class="keyword1 link" onclick="slideDown()">Games</a>, sometimes <a class="keyword2">Websites</a> too.</p> 
+                    <p>Hi, I'm Alex. Wanna know <a class="keyword3 link" onclick="pullInfo()">About</a> me?</p>
+                    <p>I love Design and Coding. I make games, sometimes websites(like this one) too.</p>
+                    <p>Check my <a class="keyword1 link" onclick="slideDown()">Works</a>, sometimes <a class="keyword2 link" onclick="pullInfo()">Websites</a> too.</p> 
                     <p><a class="keyword4 link" href="mailto:wooring@gmail.com">Contact<i class="material-icons">email</i></a> Me!</p>
                 </div>
             </section>
@@ -66,6 +90,7 @@
         </div>
         <script src="js/carousel.js"></script>
         <script src="js/firefly.js"></script>
+        <script src="js/transitions.js"></script>
   </body>
   <footer><a>&copy 2019-2020 Peiming Lin</a></footer>
   </html>
