@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/anime.min.js"></script>
+        <script src="js/common.js"></script>
     </head>
     <body>
         <div class="sky"></div>
@@ -12,85 +12,119 @@
                 </div>
                 <h1>About Me</h1>
                 <p>My name is Peiming Lin, but you can call me Alex. I'm currently living in Sydney and I love to code and design.</p>
-                <p>I'm finishing my Games Development Degree by the end of 2019 and should be graduated soon. </p>
+                <p>I'm finishing my Games Development Degree by the end of 2019 and should be graduated soon. Making game is so fun</p>
             </div>
             <div class="sideMask" onclick="pullInfo()">
-                <div class="close">
+                <span class="arrow left">
                     <i class="material-icons large">
                             keyboard_arrow_left
                     </i>
-                </div>
+                </span>
             </div>
         </div>
         <div class="contentBox">
             <section class="container">
-                <div class="info">
-                    <div class="myphoto">
-                        <img src="imgs/me_circle.png" alt="my photo"/>
-                    </div>
-                    <div class="infoText">
-                        <h1>About Me</h1>
-                        <p>My name is Peiming Lin, but you can call me Alex. I'm living in Sydney and love to code and design.</p>
-                        <p>I'm finishing my Games Development Degree by the end of 2019</p>
-                        <p>I had a Computer Science degree and I used to work in a game company for 3 years in China. I had a chance to come to Australia to experience a different life and I thought I was young so I resigned.</p>
-                        <p>After arrival in Australia, I started to work in different industry for some years and realised making game is still my dream. So I went to UTS to study Games Development Degree and about to finish it by the end of 2019.</p>
-                    </div>
-                </div>
                 <div class="aboutText">
-                    <p>Hi, I'm Alex. Wanna know <a class="keyword3 link" onclick="pullInfo()">About</a> me?</p>
+                    <p>Hi, I'm Alex. Wanna know <a class="keyword2 link" onclick="pullInfo()">About</a> me?</p>
                     <p>I love Design and Coding. I make games, sometimes websites(like this one) too.</p>
-                    <p>Check my <a class="keyword1 link" onclick="slideDown()">Works</a>, sometimes <a class="keyword2 link" onclick="pullInfo()">Websites</a> too.</p> 
-                    <p><a class="keyword4 link" href="mailto:wooring@gmail.com">Contact<i class="material-icons">email</i></a> Me!</p>
+                    <p>Check some of my <a class="keyword1 link" onclick="slideDown()">Works</a>, you might find them interesting.</p> 
+                    <p><a class="keyword4 link" href="mailto:wooring@gmail.com">Contact<i class="material-icons">email</i></a> Me if you have any comment!</p>
                 </div>
             </section>
         </div>
         <div class="carousel-container">
             <div class="carousel">
-                <div class="goUp" onclick="slideUp()">
-                        <i class="material-icons">
-                                expand_less
-                        </i>
-                </div>
+                <span class="goUp" onclick="slideUp()">
+                    <i class="material-icons">
+                            expand_less
+                    </i>
+                </span>
+                <span class="arrow left" onclick="slideLeft()">
+                    <i class="material-icons large">
+                        keyboard_arrow_left
+                    </i>
+                </span>
+                <span class="arrow right" onclick="slideRight()">
+                    <i class="material-icons large">
+                        keyboard_arrow_right
+                    </i>
+                </span>
                 <div class="slider">
                     <section>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OkQd3mL5aiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                            <p>Bloby Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore eius quia incidunt facilis nisi quisquam nam illo quas magni, eaque doloribus blanditiis. Harum maxime voluptates eos quis, libero nihil?</p>
+                        <video poster="videos/Blobby.png" controls>
+                            <source src="videos/Blobby.mp4" type="video/mp4">
+                        </video>
+                        <span class="caseInfo">
+                            <h1>Blobby</h1>
+                            <p>Blobby Blob is a blobtastic 3D puzzle platformer where you play as a sentient blob that wants to explore the world. </p>
+                            <p>Trapped in a laboratory, you collect the hidden key cards by completing various challenges.</p>
+                            <p>Change your shape to solve different puzzles.</p>
+                            <span class="tag"><a>Unity</a><a>C#</a><a>3d</a></span>
+                            <p><span class="header">Role:</span> Gameplay Programmer/Game Designer</p>
                         </span>
                     </section>
                     <section>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DYzBpy0b7yE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video poster="videos/Wandering_Jack.png" controls>
+                            <source src="videos/Wandering_Jack.mp4" type="video/mp4">
+                        </video>
+                        <span class="caseInfo">
+                            <h1>Wandering Jack</h1>
+                            <p>Wandering Jack is a Cute 2D platform, action-adventure game based on a space background.</p>
+                            <p>Jump to other planets, avoid all the dangers in Space, Collect the pieces, fix the spaceship and be the winner.</p>
+                            <span class="tag"><a>Unity</a><a>C#</a><a>2d</a><a>puzzle</a></span>
+                            <p><span class="header">Role:</span> Leader Programmer/Designer</p>
+                        </span>
                     </section>
-                    <section>Section 3</section>
                     <section>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/c28KbKLC1T4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video poster="videos/Wandering_Jack.png" controls>
+                            <source src="videos/Wandering_Jack.mp4" type="video/mp4">
+                        </video>
+                        <span class="caseInfo">
+                            <h1>Little Planet</h1>
+                            <p>Blobby Blob is a blobtastic 3D puzzle platformer where you play as a sentient blob that wants to explore the world. </p>
+                            <p>Trapped in a laboratory, you collect the hidden key cards by completing various challenges.</p>
+                            <p>Change your shape to solve different puzzles.</p>
+                            <p>Role: Gameplay Programmer and Designer</p>
+                            <p><a href="https://peiminglin.github.io/LittlePlanet/index.html" target="_blank">Link</a></p>
+                        </span>
                     </section>
                     <section>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5WYmmM7H7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video poster="videos/GameJamDemo.png" controls>
+                            <source src="videos/GameJamDemo.mp4" type="video/mp4">
+                        </video>
+                        <span class="caseInfo">
+                            <h1>GameJamDemo</h1>
+                            <p>Blobby Blob is a blobtastic 3D puzzle platformer where you play as a sentient blob that wants to explore the world. </p>
+                            <p>Trapped in a laboratory, you collect the hidden key cards by completing various challenges.</p>
+                            <p>Change your shape to solve different puzzles.</p>
+                            <p>Role: Gameplay Programmer and Designer</p>
+                        </span>
                     </section>
                     <section>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/F6cK21GIsVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <object width="550" height="400">
+                            <param name="movie" value="res/game.swf">
+                            <embed src="res/game.swf" width="550" height="400">
+                                Flash is not supported in your browser, ;
+                            </embed>
+                        </object>
+                        <span class="caseInfo">
+                            <h1>Angry Boy</h1>
+                            <p>Blobby Blob is a blobtastic 3D puzzle platformer where you play as a sentient blob that wants to explore the world. </p>
+                            <p>Trapped in a laboratory, you collect the hidden key cards by completing various challenges.</p>
+                            <p>Change your shape to solve different puzzles.</p>
+                            <p>Role: Gameplay Programmer and Designer</p>
+                        </span>
                     </section>
                 </div>
                 <div class="controls">
-                    <span class="arrow left">
-                        <i class="material-icons">
-                            keyboard_arrow_left
-                        </i>
-                    </span>
-                    <span class="arrow right">
-                        <i class="material-icons">
-                            keyboard_arrow_right
-                        </i>
-                    </span>
-                    <ul id="dotList">
-                    </ul>
+                    <div id="dotList">
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="js/transitions.js"></script>
         <script src="js/carousel.js"></script>
         <script src="js/firefly.js"></script>
-        <script src="js/transitions.js"></script>
+        <div class="copyright"><a>&copy 2019-2020 Peiming Lin</a></div>
   </body>
-  <footer><a>&copy 2019-2020 Peiming Lin</a></footer>
   </html>
