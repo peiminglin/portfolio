@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Tomorrow:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 .material-icons.large{
     font-size: 3em;
@@ -10,10 +10,8 @@ body {
     color: #fff;
     background-color: #000;
     background-image: radial-gradient(circle, #136, #000 30%, #000);
-    font-family: 'Tomorrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    font-style: normal;
-    font-weight: normal;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -48,22 +46,22 @@ img{
 }
 
 .keyword1 {
-    color: #3377bb;
+    color: #3388bb;
     font-size: 3em;
 }
 
 .keyword2 {
-    color: #77bb33;
+    color: #88bb33;
     font-size: 2.7em;
 }
 
 .keyword3 {
-    color: #bb7733;
+    color: #bb8833;
     font-size: 2.3em;
 }
 
 .keyword4 {
-    color: #bb3377;
+    color: #bb3388;
     font-size: 2em;
 }
 
@@ -71,24 +69,22 @@ img{
     display: inline-block;
     cursor: pointer;
     transform: scale(1) rotate(0);
-    text-shadow: 0px 0px 10px;
+    text-shadow: 0.1em 0.1em .2em #000;
     transition: transform 100ms ease-out, text-shadow 100ms ease-out;
 }
 
 .link:hover {
-    transform: scale(1.1) rotate(5deg);
-    text-shadow: 0px 0px 20px;
+    transform: scale(1.5) rotate(5deg);
 }
 
 .aboutText {
     padding: 20px;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 2em;
     transition: transform 100ms linear;
 }
 
 .aboutText a{
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -263,7 +259,6 @@ video{
 }
 
 .caseInfo p{
-    font-family: 'Roboto', sans-serif;
     text-shadow: 0 0 .5em #000;
 }
 
@@ -366,7 +361,6 @@ video{
 
 .header{
     font-weight: bold;
-    font-family: 'Tomorrow', sans-serif;
     font-size: 1.2em;
 }
 
