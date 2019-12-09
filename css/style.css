@@ -142,6 +142,7 @@ img{
     flex-direction: column;
     font-size: .7em;
     text-align: center;
+    overflow-y: auto;
 }
 
 .sideMask{
