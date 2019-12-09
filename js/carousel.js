@@ -24,10 +24,12 @@ const dots = Array.from(dotList.children);
 
 function startSlide(){
     const lastVideo = slider.children[current].getElementsByTagName('video')[0];
-    lastVideo.pause();
+    if (lastVideo) lastVideo.pause();
     const currentVideo = slider.children[target].getElementsByTagName('video')[0];
-    currentVideo.play();
-    currentVideo.muted = true;
+    if (currentVideo){
+        currentVideo.play();
+        currentVideo.muted = true;
+    }
     dots[current].classList.remove('selected');
     slider.style.transform = 'translate(-' + (target * 100/sections) + '%)';
     slider.style.backgroundColor = colors[target];
@@ -46,7 +48,7 @@ function slideLeft(){
 }
 
 document.querySelectorAll('#dotList div').forEach(function(dot, id){
-    const caseName = slider.children[id].getElementsByTagName('h1')[0].textContent;
+    const caseName = slider.children[id].getElementsByClassName('title')[0].textContent;
     if (caseName)
         dot.style.backgroundImage = "url('videos/" + caseName + " Ico.png')";
     dot.style.backgroundSize = "cover";

@@ -263,6 +263,7 @@ video{
 
 .caseInfo p{
     font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 .5em #000;
 }
 
 .slider {
@@ -283,18 +284,27 @@ video{
 
 .goUp {
     position: absolute;
+    padding: .5em 0;
     z-index: 10;
-    top: 5px;
+    top: 0px;
     width: 100%;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.562);
-    padding: 5px 50px;
+    background: rgb(255, 255, 255, 0.5);
     text-align: center;
+    opacity: 0.5;
+    box-shadow: 0 .2em .2em rgba(66, 66, 66, 0.6);
+    transition: opacity 100ms ease-in, padding 100ms ease-in;
+}
+
+.goUp:hover{
+    opacity: 1;
+    padding: .7em 0;
 }
 
 .arrow {
     position: absolute;
     color: #fff;
+    padding: 40vh 0;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -322,10 +332,10 @@ video{
 
 #dotList div{
     background-color: #77bb33;
-    width: 5vw;
-    height: 5vw;
+    width: 8vh;
+    height: 8vh;
     border-radius: 50%;
-    margin: 1vw;
+    margin: .7vw;
     cursor: pointer;
     filter: grayscale();
     opacity: 60%;
@@ -345,17 +355,23 @@ video{
 }
 
 .tag a{
-    background-color: #bb3377;
+    background-color: #4e1b47;
     border-radius: 10%;
     color: #fee;
-    font-size: .7em;
+    font-size: .8em;
     padding: .2em .7em;
     margin: 0 .5em;
 }
 
 .header{
-    color: #91c0f0;
     font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 1.2em;
+}
+
+.title{
+    font-size: 2em;
+    text-shadow: 0 0 .5em #000;
 }
 
 /* ======================================
