@@ -9,8 +9,8 @@ var activeSlide = -1;
 const colors = [    'rgba(53, 177, 37, 0.3)', 
                     'rgba(20, 6, 51, 0.3)', 
                     'rgba(14, 121, 153, 0.3)', 
-                    'rgba(93, 193, 213, 0.3)', 
-                    'rgba(13, 193, 93, 0.3)'];
+                    'rgba(5, 30, 189, 0.3)', 
+                    'rgba(23, 87, 15, 0.5)'];
 
 var dotList = document.getElementById("dotList");
 for(var i=0; i < sections; i++){
@@ -27,7 +27,7 @@ function startSlide(){
     if (lastVideo) lastVideo.pause();
     const currentVideo = slider.children[target].getElementsByTagName('video')[0];
     if (currentVideo){
-        currentVideo.play();
+        //currentVideo.play();
         currentVideo.muted = true;
     }
     dots[current].classList.remove('selected');
@@ -72,7 +72,7 @@ function slideDown(){
     toggle('.container', 'blured');
 
     const currentVideo = slider.children[target].getElementsByTagName('video')[0];
-    currentVideo.play();
+    //currentVideo.play();
     currentVideo.muted = true;
 }
 
