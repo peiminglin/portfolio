@@ -69,8 +69,7 @@ img{
     display: inline-block;
     cursor: pointer;
     transform: scale(1) rotate(0);
-    text-shadow: 0.1em 0.1em .2em #000;
-    transition: transform 100ms ease-out, text-shadow 100ms ease-out;
+    transition: transform 100ms ease-out;
 }
 
 .link:hover {
@@ -86,6 +85,10 @@ img{
 
 .aboutText a{
     font-weight: bold;
+}
+
+.aboutText p{
+    text-shadow: .2em .2em .5em #000;
 }
 
 .contentBox {
