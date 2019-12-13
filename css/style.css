@@ -45,6 +45,14 @@ img{
     height: auto;
 }
 
+a:link{
+    color: #aa5522;
+}
+
+a:visited{
+    color: #b83;
+}
+
 .keyword1 {
     color: #3388bb;
     font-size: 3em;
@@ -56,7 +64,7 @@ img{
 }
 
 .keyword3 {
-    color: #bb8833;
+    color: #bb302a;
     font-size: 2.3em;
 }
 
@@ -67,6 +75,7 @@ img{
 
 .link {
     display: inline-block;
+    font-weight: bold;
     cursor: pointer;
     transform: scale(1) rotate(0);
     transition: transform 100ms ease-out;
@@ -81,10 +90,6 @@ img{
     text-align: center;
     line-height: 2em;
     transition: transform 100ms linear;
-}
-
-.aboutText a{
-    font-weight: bold;
 }
 
 .aboutText p{

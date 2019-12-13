@@ -6,11 +6,11 @@ slider.style.width = (sections)+'00%';
 var current = 0;
 var target = 0;
 var activeSlide = -1;
-const colors = [    'rgba(53, 177, 37, 0.3)', 
-                    'rgba(20, 6, 51, 0.3)', 
-                    'rgba(14, 121, 153, 0.3)', 
-                    'rgba(5, 30, 189, 0.3)', 
-                    'rgba(23, 87, 15, 0.5)'];
+const colors = [    'rgba(53, 177, 37, 0.6)', 
+                    'rgba(20, 6, 51, 0.6)', 
+                    'rgba(14, 121, 153, 0.6)', 
+                    'rgba(25, 70, 149, 0.6)', 
+                    'rgba(23, 87, 15, 0.6)'];
 
 var dotList = document.getElementById("dotList");
 for(var i=0; i < sections; i++){
@@ -74,6 +74,12 @@ function slideDown(){
     const currentVideo = slider.children[target].getElementsByTagName('video')[0];
     //currentVideo.play();
     currentVideo.muted = true;
+    let bg = "linear-gradient(120deg";
+    for (let i=0; i < colors.length; i++){
+        bg += ", " + colors[i];
+    }
+    bg += ")";
+    slider.style.backgroundImage = bg;
 }
 
 function slideUp(){
